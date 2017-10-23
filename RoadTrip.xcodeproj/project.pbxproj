@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BC9431E44A0D473A4C08A78 /* libPods-RoadTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC72DD3B63F5CC780F95BB1 /* libPods-RoadTrip.a */; };
 		C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725361F9DE88400BBC44D /* AppDelegate.m */; };
 		C817253A1F9DE88400BBC44D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725391F9DE88400BBC44D /* ViewController.m */; };
 		C817253D1F9DE88400BBC44D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817253B1F9DE88400BBC44D /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093901DD0C23506BEE4330AA /* Pods-RoadTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.debug.xcconfig"; sourceTree = "<group>"; };
+		AFC72DD3B63F5CC780F95BB1 /* libPods-RoadTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RoadTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81725321F9DE88400BBC44D /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81725351F9DE88400BBC44D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C81725361F9DE88400BBC44D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		C81725441F9DE88400BBC44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C81725461F9DE88400BBC44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C81725471F9DE88400BBC44D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC9431E44A0D473A4C08A78 /* libPods-RoadTrip.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22EA8EA8B70F2B1232BF79CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				093901DD0C23506BEE4330AA /* Pods-RoadTrip.debug.xcconfig */,
+				EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3E5F7758FEFD35FC8DB6D4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC72DD3B63F5CC780F95BB1 /* libPods-RoadTrip.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C81725291F9DE88400BBC44D = {
 			isa = PBXGroup;
 			children = (
 				C81725341F9DE88400BBC44D /* RoadTrip */,
 				C81725331F9DE88400BBC44D /* Products */,
+				22EA8EA8B70F2B1232BF79CA /* Pods */,
+				A3E5F7758FEFD35FC8DB6D4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C817254B1F9DE88400BBC44D /* Build configuration list for PBXNativeTarget "RoadTrip" */;
 			buildPhases = (
+				3E64A3B6CB5D607F97F71BEA /* [CP] Check Pods Manifest.lock */,
 				C817252E1F9DE88400BBC44D /* Sources */,
 				C817252F1F9DE88400BBC44D /* Frameworks */,
 				C81725301F9DE88400BBC44D /* Resources */,
+				EB190BC552E13F230B9F0F3C /* [CP] Embed Pods Frameworks */,
+				4F6F9BAFF48C70FCDAE679BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E64A3B6CB5D607F97F71BEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F6F9BAFF48C70FCDAE679BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB190BC552E13F230B9F0F3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C817252E1F9DE88400BBC44D /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		C817254C1F9DE88400BBC44D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 093901DD0C23506BEE4330AA /* Pods-RoadTrip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +370,7 @@
 		};
 		C817254D1F9DE88400BBC44D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
