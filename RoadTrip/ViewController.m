@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import <AMapNaviKit/AMapNaviKit.h>
+@interface ViewController ()<AMapNaviDriveManagerDelegate>
+@property(nonatomic,strong)AMapNaviDriveManager *driveManager;
+@property(nonatomic,strong)AMapNaviDriveView *driveView;
 
 @end
 
@@ -16,10 +18,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self initDriveManager];
+    [self configDriveNavi];
+
 }
-
-
+- (void)initDriveManager
+{
+    if (self.driveManager == nil)
+    {
+        self.driveManager = [[AMapNaviDriveManager alloc] init];
+        [self.driveManager setDelegate:self];
+    }
+}
+- (void)configDriveNavi
+{
+    [self.driveManager addDataRepresentative:self.driveView];
+    [self.view addSubview:self.driveView];
+}
+//- (void)calculateRoute
+//{
+//    [self.driveManager calculateDriveRouteWithStartPoints:@[self.startPoint]
+//                                                endPoints:@[self.endPoint]
+//                                                wayPoints:nil
+//                                          drivingStrategy:AMapNaviDrivingStrategySingleDefault];
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
