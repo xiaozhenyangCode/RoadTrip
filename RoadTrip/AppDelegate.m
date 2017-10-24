@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import <AMapFoundationKit/AMapFoundationKit.h>
+#import "RTRootViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
      [AMapServices sharedServices].apiKey = @"2161ad5613ea28d57eda40f14e238ca7";
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    RTRootViewController *ctrl = [[RTRootViewController alloc]init];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:ctrl];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

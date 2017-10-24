@@ -8,27 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		7BC9431E44A0D473A4C08A78 /* libPods-RoadTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC72DD3B63F5CC780F95BB1 /* libPods-RoadTrip.a */; };
+		C80F2DCB1F9F23780038F005 /* RTNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2DCA1F9F23780038F005 /* RTNavViewController.m */; };
+		C80F2DD01F9F279A0038F005 /* RTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2DCF1F9F279A0038F005 /* RTBaseViewController.m */; };
+		C80F2DD51F9F281B0038F005 /* RTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2DD41F9F281B0038F005 /* RTRootViewController.m */; };
+		C80F2DD81F9F285D0038F005 /* RTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2DD71F9F285D0038F005 /* RTHomeViewController.m */; };
+		C80F2DDB1F9F287D0038F005 /* RTFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2DDA1F9F287D0038F005 /* RTFindViewController.m */; };
+		C80F2DDE1F9F28860038F005 /* RTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2DDD1F9F28860038F005 /* RTMineViewController.m */; };
+		C80F2E0D1F9F346A0038F005 /* UIColor+RTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2E0C1F9F346A0038F005 /* UIColor+RTCategory.m */; };
 		C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725361F9DE88400BBC44D /* AppDelegate.m */; };
-		C817253A1F9DE88400BBC44D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725391F9DE88400BBC44D /* ViewController.m */; };
-		C817253D1F9DE88400BBC44D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C817253B1F9DE88400BBC44D /* Main.storyboard */; };
 		C81725401F9DE88400BBC44D /* RoadTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C817253E1F9DE88400BBC44D /* RoadTrip.xcdatamodeld */; };
-		C81725421F9DE88400BBC44D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C81725411F9DE88400BBC44D /* Assets.xcassets */; };
-		C81725451F9DE88400BBC44D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81725431F9DE88400BBC44D /* LaunchScreen.storyboard */; };
 		C81725481F9DE88400BBC44D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725471F9DE88400BBC44D /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		093901DD0C23506BEE4330AA /* Pods-RoadTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.debug.xcconfig"; sourceTree = "<group>"; };
 		AFC72DD3B63F5CC780F95BB1 /* libPods-RoadTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RoadTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C80F2DC91F9F23780038F005 /* RTNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTNavViewController.h; sourceTree = "<group>"; };
+		C80F2DCA1F9F23780038F005 /* RTNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTNavViewController.m; sourceTree = "<group>"; };
+		C80F2DCE1F9F279A0038F005 /* RTBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTBaseViewController.h; sourceTree = "<group>"; };
+		C80F2DCF1F9F279A0038F005 /* RTBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTBaseViewController.m; sourceTree = "<group>"; };
+		C80F2DD31F9F281B0038F005 /* RTRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTRootViewController.h; sourceTree = "<group>"; };
+		C80F2DD41F9F281B0038F005 /* RTRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTRootViewController.m; sourceTree = "<group>"; };
+		C80F2DD61F9F285D0038F005 /* RTHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTHomeViewController.h; sourceTree = "<group>"; };
+		C80F2DD71F9F285D0038F005 /* RTHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTHomeViewController.m; sourceTree = "<group>"; };
+		C80F2DD91F9F287D0038F005 /* RTFindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTFindViewController.h; sourceTree = "<group>"; };
+		C80F2DDA1F9F287D0038F005 /* RTFindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTFindViewController.m; sourceTree = "<group>"; };
+		C80F2DDC1F9F28860038F005 /* RTMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTMineViewController.h; sourceTree = "<group>"; };
+		C80F2DDD1F9F28860038F005 /* RTMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTMineViewController.m; sourceTree = "<group>"; };
+		C80F2DE41F9F29F80038F005 /* NSString+CZHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		C80F2DE51F9F29F80038F005 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		C80F2DE61F9F29F90038F005 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		C80F2DE71F9F29F90038F005 /* NSMutableString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Category.h"; sourceTree = "<group>"; };
+		C80F2DE81F9F29F90038F005 /* NSString+CZPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		C80F2DE91F9F29F90038F005 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		C80F2DEA1F9F29F90038F005 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		C80F2DEB1F9F29F90038F005 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		C80F2DEC1F9F29F90038F005 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		C80F2DED1F9F29FA0038F005 /* NSString+CZBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		C80F2DEE1F9F29FA0038F005 /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		C80F2DF01F9F29FA0038F005 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		C80F2DF11F9F29FA0038F005 /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		C80F2DF21F9F29FA0038F005 /* UIView+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		C80F2DF31F9F29FA0038F005 /* UIView+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		C80F2DF41F9F29FB0038F005 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		C80F2DF51F9F29FB0038F005 /* NSData+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Category.h"; sourceTree = "<group>"; };
+		C80F2DF61F9F29FB0038F005 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		C80F2DF71F9F29FB0038F005 /* NSArray+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		C80F2DF81F9F29FB0038F005 /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		C80F2DF91F9F29FB0038F005 /* NSArray+Ca.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Ca.h"; sourceTree = "<group>"; };
+		C80F2DFA1F9F29FC0038F005 /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		C80F2DFB1F9F29FC0038F005 /* NSString+CZBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		C80F2DFC1F9F29FC0038F005 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		C80F2DFD1F9F29FD0038F005 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		C80F2DFE1F9F29FD0038F005 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		C80F2DFF1F9F29FD0038F005 /* NSString+CZPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		C80F2E001F9F29FD0038F005 /* NSMutableString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Category.m"; sourceTree = "<group>"; };
+		C80F2E021F9F29FE0038F005 /* NSString+CZHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		C80F2E031F9F29FE0038F005 /* NSData+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Category.m"; sourceTree = "<group>"; };
+		C80F2E041F9F29FE0038F005 /* NSArray+Ca.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Ca.m"; sourceTree = "<group>"; };
+		C80F2E0A1F9F30610038F005 /* RT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RT-Prefix.pch"; sourceTree = "<group>"; };
+		C80F2E0B1F9F346A0038F005 /* UIColor+RTCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RTCategory.h"; sourceTree = "<group>"; };
+		C80F2E0C1F9F346A0038F005 /* UIColor+RTCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RTCategory.m"; sourceTree = "<group>"; };
+		C80F2E0E1F9F366B0038F005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C81725321F9DE88400BBC44D /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81725351F9DE88400BBC44D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C81725361F9DE88400BBC44D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C81725381F9DE88400BBC44D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C81725391F9DE88400BBC44D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C817253C1F9DE88400BBC44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C817253F1F9DE88400BBC44D /* RoadTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoadTrip.xcdatamodel; sourceTree = "<group>"; };
-		C81725411F9DE88400BBC44D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C81725441F9DE88400BBC44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C81725461F9DE88400BBC44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C81725471F9DE88400BBC44D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +108,96 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C80F2DC81F9F23320038F005 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C80F2DE31F9F29550038F005 /* Main */,
+				C80F2DCD1F9F27850038F005 /* BaseClass */,
+				C80F2DC91F9F23780038F005 /* RTNavViewController.h */,
+				C80F2DCA1F9F23780038F005 /* RTNavViewController.m */,
+				C80F2DE01F9F28CB0038F005 /* Common */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		C80F2DCC1F9F24090038F005 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C81725351F9DE88400BBC44D /* AppDelegate.h */,
+				C81725361F9DE88400BBC44D /* AppDelegate.m */,
+				C80F2E0E1F9F366B0038F005 /* Assets.xcassets */,
+				C81725461F9DE88400BBC44D /* Info.plist */,
+				C81725471F9DE88400BBC44D /* main.m */,
+				C817253E1F9DE88400BBC44D /* RoadTrip.xcdatamodeld */,
+				C80F2E0A1F9F30610038F005 /* RT-Prefix.pch */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		C80F2DCD1F9F27850038F005 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				C80F2DCE1F9F279A0038F005 /* RTBaseViewController.h */,
+				C80F2DCF1F9F279A0038F005 /* RTBaseViewController.m */,
+			);
+			name = BaseClass;
+			sourceTree = "<group>";
+		};
+		C80F2DE01F9F28CB0038F005 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C80F2DF91F9F29FB0038F005 /* NSArray+Ca.h */,
+				C80F2E041F9F29FE0038F005 /* NSArray+Ca.m */,
+				C80F2DF71F9F29FB0038F005 /* NSArray+Log.h */,
+				C80F2DEE1F9F29FA0038F005 /* NSArray+Log.m */,
+				C80F2DE51F9F29F80038F005 /* NSAttributedString+CZAdditon.h */,
+				C80F2DF81F9F29FB0038F005 /* NSAttributedString+CZAdditon.m */,
+				C80F2DF51F9F29FB0038F005 /* NSData+Category.h */,
+				C80F2E031F9F29FE0038F005 /* NSData+Category.m */,
+				C80F2DE71F9F29F90038F005 /* NSMutableString+Category.h */,
+				C80F2E001F9F29FD0038F005 /* NSMutableString+Category.m */,
+				C80F2DEB1F9F29F90038F005 /* NSObject+Category.h */,
+				C80F2DFC1F9F29FC0038F005 /* NSObject+Category.m */,
+				C80F2DF11F9F29FA0038F005 /* NSObject+CZRuntime.h */,
+				C80F2DFA1F9F29FC0038F005 /* NSObject+CZRuntime.m */,
+				C80F2DEA1F9F29F90038F005 /* NSString+Category.h */,
+				C80F2DEC1F9F29F90038F005 /* NSString+Category.m */,
+				C80F2DFB1F9F29FC0038F005 /* NSString+CZBase64.h */,
+				C80F2DED1F9F29FA0038F005 /* NSString+CZBase64.m */,
+				C80F2DE41F9F29F80038F005 /* NSString+CZHash.h */,
+				C80F2E021F9F29FE0038F005 /* NSString+CZHash.m */,
+				C80F2DFF1F9F29FD0038F005 /* NSString+CZPath.h */,
+				C80F2DE81F9F29F90038F005 /* NSString+CZPath.m */,
+				C80F2DFD1F9F29FD0038F005 /* UIButton+CZAddition.h */,
+				C80F2DF01F9F29FA0038F005 /* UIButton+CZAddition.m */,
+				C80F2DF61F9F29FB0038F005 /* UILabel+CZAddition.m */,
+				C80F2DE91F9F29F90038F005 /* UIScreen+CZAddition.h */,
+				C80F2DF41F9F29FB0038F005 /* UIScreen+CZAddition.m */,
+				C80F2DF21F9F29FA0038F005 /* UIView+CZAddition.h */,
+				C80F2DF31F9F29FA0038F005 /* UIView+CZAddition.m */,
+				C80F2DE61F9F29F90038F005 /* UIViewController+CZAddition.h */,
+				C80F2DFE1F9F29FD0038F005 /* UIViewController+CZAddition.m */,
+				C80F2E0B1F9F346A0038F005 /* UIColor+RTCategory.h */,
+				C80F2E0C1F9F346A0038F005 /* UIColor+RTCategory.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		C80F2DE31F9F29550038F005 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C80F2DD31F9F281B0038F005 /* RTRootViewController.h */,
+				C80F2DD41F9F281B0038F005 /* RTRootViewController.m */,
+				C80F2DD61F9F285D0038F005 /* RTHomeViewController.h */,
+				C80F2DD71F9F285D0038F005 /* RTHomeViewController.m */,
+				C80F2DD91F9F287D0038F005 /* RTFindViewController.h */,
+				C80F2DDA1F9F287D0038F005 /* RTFindViewController.m */,
+				C80F2DDC1F9F28860038F005 /* RTMineViewController.h */,
+				C80F2DDD1F9F28860038F005 /* RTMineViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		C81725291F9DE88400BBC44D = {
 			isa = PBXGroup;
 			children = (
@@ -84,16 +219,8 @@
 		C81725341F9DE88400BBC44D /* RoadTrip */ = {
 			isa = PBXGroup;
 			children = (
-				C81725351F9DE88400BBC44D /* AppDelegate.h */,
-				C81725361F9DE88400BBC44D /* AppDelegate.m */,
-				C81725381F9DE88400BBC44D /* ViewController.h */,
-				C81725391F9DE88400BBC44D /* ViewController.m */,
-				C817253B1F9DE88400BBC44D /* Main.storyboard */,
-				C81725411F9DE88400BBC44D /* Assets.xcassets */,
-				C81725431F9DE88400BBC44D /* LaunchScreen.storyboard */,
-				C81725461F9DE88400BBC44D /* Info.plist */,
-				C81725471F9DE88400BBC44D /* main.m */,
-				C817253E1F9DE88400BBC44D /* RoadTrip.xcdatamodeld */,
+				C80F2DC81F9F23320038F005 /* Class */,
+				C80F2DCC1F9F24090038F005 /* Other */,
 			);
 			path = RoadTrip;
 			sourceTree = "<group>";
@@ -159,9 +286,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C81725451F9DE88400BBC44D /* LaunchScreen.storyboard in Resources */,
-				C81725421F9DE88400BBC44D /* Assets.xcassets in Resources */,
-				C817253D1F9DE88400BBC44D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,33 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C817253A1F9DE88400BBC44D /* ViewController.m in Sources */,
 				C81725401F9DE88400BBC44D /* RoadTrip.xcdatamodeld in Sources */,
+				C80F2DD51F9F281B0038F005 /* RTRootViewController.m in Sources */,
+				C80F2DCB1F9F23780038F005 /* RTNavViewController.m in Sources */,
 				C81725481F9DE88400BBC44D /* main.m in Sources */,
+				C80F2DDE1F9F28860038F005 /* RTMineViewController.m in Sources */,
+				C80F2E0D1F9F346A0038F005 /* UIColor+RTCategory.m in Sources */,
+				C80F2DDB1F9F287D0038F005 /* RTFindViewController.m in Sources */,
 				C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */,
+				C80F2DD01F9F279A0038F005 /* RTBaseViewController.m in Sources */,
+				C80F2DD81F9F285D0038F005 /* RTHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C817253B1F9DE88400BBC44D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C817253C1F9DE88400BBC44D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C81725431F9DE88400BBC44D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C81725441F9DE88400BBC44D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C81725491F9DE88400BBC44D /* Debug */ = {
@@ -358,8 +469,11 @@
 			baseConfigurationReference = 093901DD0C23506BEE4330AA /* Pods-RoadTrip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56ERQH9L8L;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Desktop/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -374,8 +488,11 @@
 			baseConfigurationReference = EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56ERQH9L8L;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Desktop/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
