@@ -44,9 +44,9 @@
 - (void) addChildController:(UIViewController *)ctl CtlName:(NSString *)ctlName CtlImage:(NSString *)imageName{
     
     ctl.tabBarItem.image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    ctl.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    ctl.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_select",imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     ctl.tabBarItem.title = ctlName;
-
+    [ctl.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]}forState:UIControlStateSelected];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:ctl];
     [self addChildViewController:nav];
     

@@ -16,8 +16,8 @@
 		C80F2DDE1F9F28860038F005 /* RTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2DDD1F9F28860038F005 /* RTMineViewController.m */; };
 		C80F2E0D1F9F346A0038F005 /* UIColor+RTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2E0C1F9F346A0038F005 /* UIColor+RTCategory.m */; };
 		C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725361F9DE88400BBC44D /* AppDelegate.m */; };
-		C81725401F9DE88400BBC44D /* RoadTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C817253E1F9DE88400BBC44D /* RoadTrip.xcdatamodeld */; };
 		C81725481F9DE88400BBC44D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725471F9DE88400BBC44D /* main.m */; };
+		C8BCF0D11FA09B8200FC587F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,13 +69,12 @@
 		C80F2E0A1F9F30610038F005 /* RT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RT-Prefix.pch"; sourceTree = "<group>"; };
 		C80F2E0B1F9F346A0038F005 /* UIColor+RTCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+RTCategory.h"; sourceTree = "<group>"; };
 		C80F2E0C1F9F346A0038F005 /* UIColor+RTCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RTCategory.m"; sourceTree = "<group>"; };
-		C80F2E0E1F9F366B0038F005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C81725321F9DE88400BBC44D /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81725351F9DE88400BBC44D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C81725361F9DE88400BBC44D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C817253F1F9DE88400BBC44D /* RoadTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoadTrip.xcdatamodel; sourceTree = "<group>"; };
 		C81725461F9DE88400BBC44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C81725471F9DE88400BBC44D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,10 +124,9 @@
 			children = (
 				C81725351F9DE88400BBC44D /* AppDelegate.h */,
 				C81725361F9DE88400BBC44D /* AppDelegate.m */,
-				C80F2E0E1F9F366B0038F005 /* Assets.xcassets */,
 				C81725461F9DE88400BBC44D /* Info.plist */,
+				C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */,
 				C81725471F9DE88400BBC44D /* main.m */,
-				C817253E1F9DE88400BBC44D /* RoadTrip.xcdatamodeld */,
 				C80F2E0A1F9F30610038F005 /* RT-Prefix.pch */,
 			);
 			name = Other;
@@ -286,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8BCF0D11FA09B8200FC587F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C81725401F9DE88400BBC44D /* RoadTrip.xcdatamodeld in Sources */,
 				C80F2DD51F9F281B0038F005 /* RTRootViewController.m in Sources */,
 				C80F2DCB1F9F23780038F005 /* RTNavViewController.m in Sources */,
 				C81725481F9DE88400BBC44D /* main.m in Sources */,
@@ -524,19 +522,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		C817253E1F9DE88400BBC44D /* RoadTrip.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				C817253F1F9DE88400BBC44D /* RoadTrip.xcdatamodel */,
-			);
-			currentVersion = C817253F1F9DE88400BBC44D /* RoadTrip.xcdatamodel */;
-			path = RoadTrip.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = C817252A1F9DE88400BBC44D /* Project object */;
 }
