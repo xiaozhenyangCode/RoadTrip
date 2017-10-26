@@ -9,7 +9,6 @@
 #ifndef RT_Prefix_pch
 #define RT_Prefix_pch
 
-#import "UIButton+CZAddition.h"
 #import "UIColor+RTCategory.h"
 #import "UIView+CZAddition.h"
 #import "UIScreen+CZAddition.h"
@@ -22,6 +21,8 @@
 #import "NSString+CZPath.h"
 #import "NSArray+Ca.h"
 #import "NSString+Category.h"
+#import "UIButton+RTBlock.h"
+
 #define kScreenSize [UIScreen mainScreen].bounds.size
 #ifdef DEBUG
 #define NSLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
