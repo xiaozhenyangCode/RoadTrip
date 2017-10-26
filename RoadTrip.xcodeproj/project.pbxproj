@@ -17,6 +17,9 @@
 		C80F2E0D1F9F346A0038F005 /* UIColor+RTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C80F2E0C1F9F346A0038F005 /* UIColor+RTCategory.m */; };
 		C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725361F9DE88400BBC44D /* AppDelegate.m */; };
 		C81725481F9DE88400BBC44D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725471F9DE88400BBC44D /* main.m */; };
+		C89073951FA178C0002271B8 /* RTInterview.m in Sources */ = {isa = PBXBuildFile; fileRef = C89073941FA178C0002271B8 /* RTInterview.m */; };
+		C8A9200D1FA1ADD900A4DAC9 /* RTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A9200C1FA1ADD900A4DAC9 /* RTNavigationViewController.m */; };
+		C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A920111FA1D80000A4DAC9 /* SpeechSynthesizer.m */; };
 		C8BCF0D11FA09B8200FC587F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,12 @@
 		C81725361F9DE88400BBC44D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C81725461F9DE88400BBC44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C81725471F9DE88400BBC44D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C89073931FA178C0002271B8 /* RTInterview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTInterview.h; sourceTree = "<group>"; };
+		C89073941FA178C0002271B8 /* RTInterview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTInterview.m; sourceTree = "<group>"; };
+		C8A9200B1FA1ADD900A4DAC9 /* RTNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTNavigationViewController.h; sourceTree = "<group>"; };
+		C8A9200C1FA1ADD900A4DAC9 /* RTNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTNavigationViewController.m; sourceTree = "<group>"; };
+		C8A920101FA1D80000A4DAC9 /* SpeechSynthesizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechSynthesizer.h; sourceTree = "<group>"; };
+		C8A920111FA1D80000A4DAC9 /* SpeechSynthesizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechSynthesizer.m; sourceTree = "<group>"; };
 		C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,9 +121,8 @@
 			children = (
 				C80F2DE31F9F29550038F005 /* Main */,
 				C80F2DCD1F9F27850038F005 /* BaseClass */,
-				C80F2DC91F9F23780038F005 /* RTNavViewController.h */,
-				C80F2DCA1F9F23780038F005 /* RTNavViewController.m */,
 				C80F2DE01F9F28CB0038F005 /* Common */,
+				C8A9200F1FA1BB3800A4DAC9 /* Navigation */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -128,6 +136,8 @@
 				C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */,
 				C81725471F9DE88400BBC44D /* main.m */,
 				C80F2E0A1F9F30610038F005 /* RT-Prefix.pch */,
+				C89073931FA178C0002271B8 /* RTInterview.h */,
+				C89073941FA178C0002271B8 /* RTInterview.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -137,6 +147,8 @@
 			children = (
 				C80F2DCE1F9F279A0038F005 /* RTBaseViewController.h */,
 				C80F2DCF1F9F279A0038F005 /* RTBaseViewController.m */,
+				C8A9200B1FA1ADD900A4DAC9 /* RTNavigationViewController.h */,
+				C8A9200C1FA1ADD900A4DAC9 /* RTNavigationViewController.m */,
 			);
 			name = BaseClass;
 			sourceTree = "<group>";
@@ -221,6 +233,17 @@
 				C80F2DCC1F9F24090038F005 /* Other */,
 			);
 			path = RoadTrip;
+			sourceTree = "<group>";
+		};
+		C8A9200F1FA1BB3800A4DAC9 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				C8A920101FA1D80000A4DAC9 /* SpeechSynthesizer.h */,
+				C8A920111FA1D80000A4DAC9 /* SpeechSynthesizer.m */,
+				C80F2DC91F9F23780038F005 /* RTNavViewController.h */,
+				C80F2DCA1F9F23780038F005 /* RTNavViewController.m */,
+			);
+			name = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +368,15 @@
 			files = (
 				C80F2DD51F9F281B0038F005 /* RTRootViewController.m in Sources */,
 				C80F2DCB1F9F23780038F005 /* RTNavViewController.m in Sources */,
+				C8A9200D1FA1ADD900A4DAC9 /* RTNavigationViewController.m in Sources */,
 				C81725481F9DE88400BBC44D /* main.m in Sources */,
 				C80F2DDE1F9F28860038F005 /* RTMineViewController.m in Sources */,
 				C80F2E0D1F9F346A0038F005 /* UIColor+RTCategory.m in Sources */,
+				C89073951FA178C0002271B8 /* RTInterview.m in Sources */,
 				C80F2DDB1F9F287D0038F005 /* RTFindViewController.m in Sources */,
 				C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */,
 				C80F2DD01F9F279A0038F005 /* RTBaseViewController.m in Sources */,
+				C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */,
 				C80F2DD81F9F285D0038F005 /* RTHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,7 +499,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Desktop/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaozhenyang.www.RoadTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,7 +518,7 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Desktop/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaozhenyang.www.RoadTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";

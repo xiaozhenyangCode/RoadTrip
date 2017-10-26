@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RTBaseViewController : UIViewController
+@property(nonatomic,strong)UITableView *tableView;
 
+@property(nonatomic,strong)NSMutableArray *dataSource;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 @end

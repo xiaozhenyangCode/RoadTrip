@@ -21,8 +21,7 @@
      [AMapServices sharedServices].apiKey = @"2161ad5613ea28d57eda40f14e238ca7";
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    RTRootViewController *ctrl = [[RTRootViewController alloc]init];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:ctrl];
+    self.window.rootViewController= [[RTRootViewController alloc]init];
     [self.window makeKeyAndVisible];
     return YES;
 }

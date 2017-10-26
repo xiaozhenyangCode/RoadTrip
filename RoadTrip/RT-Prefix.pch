@@ -22,5 +22,10 @@
 #import "NSString+CZPath.h"
 #import "NSArray+Ca.h"
 #import "NSString+Category.h"
-
+#define kScreenSize [UIScreen mainScreen].bounds.size
+#ifdef DEBUG
+#define NSLog(format, ...) printf("[%s] %s [第%d行] %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String]);
+#else
+#define NSLog(format, ...)
+#endif
 #endif /* RT_Prefix_pch */
