@@ -58,6 +58,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)selectNaviRouteWithRouteID:(NSInteger)routeID;
 
+/**
+ * @brief 切换平行道路. 无网环境下调用此方法无任何效果. 该方法需要配合 AMapNaviDriveDataRepresentable 的 driveManager:updateParallelRoadStatus: 回调使用. since 5.3.0
+ * @param parallelRoad 该参数为预留参数,目前无效果,传入nil即可.
+ */
+- (void)switchParallelRoad:(nullable id)parallelRoad;
+
 #pragma mark - Options
 
 ///是否播报摄像头信息,默认YES.
@@ -182,7 +188,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)driveManagerOnCalculateRouteSuccess:(AMapNaviDriveManager *)driveManager;
 
 /**
- * @brief 驾车路径规划失败后的回调函数
+ * @brief 驾车路径规划失败后的回调函数. 从5.3.0版本起,算路失败后导航SDK只对外通知算路失败,SDK内部不再执行停止导航的相关逻辑.因此,当算路失败后,不会收到 driveManager:updateNaviMode: 回调; AMapDriveManager.naviMode 不会切换到 AMapNaviModeNone 状态, 而是会保持在 AMapNaviModeGPS or AMapNaviModeEmulator 状态.
  * @param error 错误信息,error.code参照 AMapNaviCalcRouteState .
  * @param driveManager 驾车导航管理类
  */

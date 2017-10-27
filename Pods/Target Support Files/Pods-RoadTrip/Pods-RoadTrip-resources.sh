@@ -79,10 +79,14 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "AMap3DMap/MAMapKit.framework/AMap.bundle"
   install_resource "AMapNavi/AMapNaviKit.framework/AMapNavi.bundle"
+  install_resource "BeeHive/BeeHive/BeeHive.bundle"
+  install_resource "NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "AMap3DMap/MAMapKit.framework/AMap.bundle"
   install_resource "AMapNavi/AMapNaviKit.framework/AMapNavi.bundle"
+  install_resource "BeeHive/BeeHive/BeeHive.bundle"
+  install_resource "NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

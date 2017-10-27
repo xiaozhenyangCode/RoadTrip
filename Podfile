@@ -3,4 +3,6 @@ target 'RoadTrip' do
 pod 'AMapNavi' 
 pod "SDWebImage"
 pod "AFNetworking"
+pod 'NIMSDK'  
+pod "BeeHive"
 end
