@@ -22,6 +22,7 @@
 		C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A920111FA1D80000A4DAC9 /* SpeechSynthesizer.m */; };
 		C8A920151FA1E03A00A4DAC9 /* UIButton+RTBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A920141FA1E03A00A4DAC9 /* UIButton+RTBlock.m */; };
 		C8BCF0D11FA09B8200FC587F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */; };
+		C8C5CA051FA3398B00507AA1 /* UIViewController+RTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C5CA041FA3398B00507AA1 /* UIViewController+RTCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,6 @@
 		C80F2DDD1F9F28860038F005 /* RTMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTMineViewController.m; sourceTree = "<group>"; };
 		C80F2DE41F9F29F80038F005 /* NSString+CZHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
 		C80F2DE51F9F29F80038F005 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
-		C80F2DE61F9F29F90038F005 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
 		C80F2DE71F9F29F90038F005 /* NSMutableString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Category.h"; sourceTree = "<group>"; };
 		C80F2DE81F9F29F90038F005 /* NSString+CZPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
 		C80F2DE91F9F29F90038F005 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
@@ -62,7 +62,6 @@
 		C80F2DFA1F9F29FC0038F005 /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
 		C80F2DFB1F9F29FC0038F005 /* NSString+CZBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
 		C80F2DFC1F9F29FC0038F005 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
-		C80F2DFE1F9F29FD0038F005 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		C80F2DFF1F9F29FD0038F005 /* NSString+CZPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
 		C80F2E001F9F29FD0038F005 /* NSMutableString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Category.m"; sourceTree = "<group>"; };
 		C80F2E021F9F29FE0038F005 /* NSString+CZHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
@@ -85,6 +84,8 @@
 		C8A920131FA1E03A00A4DAC9 /* UIButton+RTBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+RTBlock.h"; sourceTree = "<group>"; };
 		C8A920141FA1E03A00A4DAC9 /* UIButton+RTBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RTBlock.m"; sourceTree = "<group>"; };
 		C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8C5CA031FA3398B00507AA1 /* UIViewController+RTCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RTCategory.h"; sourceTree = "<group>"; };
+		C8C5CA041FA3398B00507AA1 /* UIViewController+RTCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RTCategory.m"; sourceTree = "<group>"; };
 		EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +123,8 @@
 			children = (
 				C80F2DE31F9F29550038F005 /* Main */,
 				C80F2DCD1F9F27850038F005 /* BaseClass */,
-				C80F2DE01F9F28CB0038F005 /* Common */,
 				C8A9200F1FA1BB3800A4DAC9 /* Navigation */,
+				C80F2DE01F9F28CB0038F005 /* Common */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -184,12 +185,12 @@
 				C80F2DF41F9F29FB0038F005 /* UIScreen+CZAddition.m */,
 				C80F2DF21F9F29FA0038F005 /* UIView+CZAddition.h */,
 				C80F2DF31F9F29FA0038F005 /* UIView+CZAddition.m */,
-				C80F2DE61F9F29F90038F005 /* UIViewController+CZAddition.h */,
-				C80F2DFE1F9F29FD0038F005 /* UIViewController+CZAddition.m */,
 				C80F2E0B1F9F346A0038F005 /* UIColor+RTCategory.h */,
 				C80F2E0C1F9F346A0038F005 /* UIColor+RTCategory.m */,
 				C8A920131FA1E03A00A4DAC9 /* UIButton+RTBlock.h */,
 				C8A920141FA1E03A00A4DAC9 /* UIButton+RTBlock.m */,
+				C8C5CA031FA3398B00507AA1 /* UIViewController+RTCategory.h */,
+				C8C5CA041FA3398B00507AA1 /* UIViewController+RTCategory.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -367,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C5CA051FA3398B00507AA1 /* UIViewController+RTCategory.m in Sources */,
 				C80F2DD51F9F281B0038F005 /* RTRootViewController.m in Sources */,
 				C80F2DCB1F9F23780038F005 /* RTNavViewController.m in Sources */,
 				C8A9200D1FA1ADD900A4DAC9 /* RTNavigationViewController.m in Sources */,

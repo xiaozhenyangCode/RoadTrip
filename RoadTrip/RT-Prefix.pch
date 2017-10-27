@@ -12,7 +12,7 @@
 #import "UIColor+RTCategory.h"
 #import "UIView+CZAddition.h"
 #import "UIScreen+CZAddition.h"
-#import "UIViewController+CZAddition.h"
+#import "UIViewController+RTCategory.h"
 #import "NSObject+CZRuntime.h"
 #import "NSObject+Category.h"
 #import "NSAttributedString+CZAdditon.h"
