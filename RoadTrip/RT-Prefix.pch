@@ -22,6 +22,7 @@
 #import "NSArray+Ca.h"
 #import "NSString+Category.h"
 #import "UIButton+RTBlock.h"
+#import "NSURL+RTCategory.h"
 
 #define kScreenSize [UIScreen mainScreen].bounds.size
 #ifdef DEBUG

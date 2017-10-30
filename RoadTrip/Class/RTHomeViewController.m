@@ -24,7 +24,14 @@
     RTNavViewController *navCtrl = [[RTNavViewController alloc]init];
     navCtrl.title = [NSString stringWithFormat:@"%@",self.dataSource[indexPath.row]];
     [self.navigationController pushViewController:navCtrl animated:YES];
-    
+   
+    if (@available(iOS 11, *)) { // >= 11
+        NSLog(@"XXX1");
+    } else if (@available(iOS 10, *)) { //>= 10
+        NSLog(@"XXX2");
+    } else { // < 10
+        NSLog(@"XXX3");
+    } 
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
