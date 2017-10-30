@@ -5,4 +5,5 @@ pod "SDWebImage"
 pod "AFNetworking"
 pod 'NIMSDK'  
 pod "BeeHive"
+pod "YYKit"
 end
