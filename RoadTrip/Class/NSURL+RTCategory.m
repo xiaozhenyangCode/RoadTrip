@@ -18,6 +18,8 @@
     Method rtSel =  class_getClassMethod([self class], @selector(RT_URLWithString:));
     method_exchangeImplementations(systemSel, rtSel);
 }
+//递归了
+//注意:一点调用高级功能,一旦写好注释
 +(instancetype)RT_URLWithString:(NSString *)string{
     
     NSURL *url = [self RT_URLWithString:string];

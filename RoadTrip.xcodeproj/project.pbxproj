@@ -24,6 +24,8 @@
 		C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A920111FA1D80000A4DAC9 /* SpeechSynthesizer.m */; };
 		C8A920151FA1E03A00A4DAC9 /* UIButton+RTBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A920141FA1E03A00A4DAC9 /* UIButton+RTBlock.m */; };
 		C8BCF0D11FA09B8200FC587F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */; };
+		C8C222491FA769290095914C /* NSObject+RTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C222481FA769290095914C /* NSObject+RTCategory.m */; };
+		C8C2224C1FA76B430095914C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C2224B1FA76B430095914C /* User.m */; };
 		C8C5CA051FA3398B00507AA1 /* UIViewController+RTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C5CA041FA3398B00507AA1 /* UIViewController+RTCategory.m */; };
 /* End PBXBuildFile section */
 
@@ -48,11 +50,9 @@
 		C80F2DE81F9F29F90038F005 /* NSString+CZPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
 		C80F2DE91F9F29F90038F005 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
 		C80F2DEA1F9F29F90038F005 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
-		C80F2DEB1F9F29F90038F005 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		C80F2DEC1F9F29F90038F005 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		C80F2DED1F9F29FA0038F005 /* NSString+CZBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
 		C80F2DEE1F9F29FA0038F005 /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
-		C80F2DF11F9F29FA0038F005 /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
 		C80F2DF21F9F29FA0038F005 /* UIView+CZAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
 		C80F2DF31F9F29FA0038F005 /* UIView+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
 		C80F2DF41F9F29FB0038F005 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
@@ -61,9 +61,7 @@
 		C80F2DF71F9F29FB0038F005 /* NSArray+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		C80F2DF81F9F29FB0038F005 /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
 		C80F2DF91F9F29FB0038F005 /* NSArray+Ca.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Ca.h"; sourceTree = "<group>"; };
-		C80F2DFA1F9F29FC0038F005 /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
 		C80F2DFB1F9F29FC0038F005 /* NSString+CZBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
-		C80F2DFC1F9F29FC0038F005 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		C80F2DFF1F9F29FD0038F005 /* NSString+CZPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
 		C80F2E001F9F29FD0038F005 /* NSMutableString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Category.m"; sourceTree = "<group>"; };
 		C80F2E021F9F29FE0038F005 /* NSString+CZHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
@@ -90,6 +88,10 @@
 		C8A920131FA1E03A00A4DAC9 /* UIButton+RTBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+RTBlock.h"; sourceTree = "<group>"; };
 		C8A920141FA1E03A00A4DAC9 /* UIButton+RTBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RTBlock.m"; sourceTree = "<group>"; };
 		C8BCF0CA1FA0913E00FC587F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8C222471FA769290095914C /* NSObject+RTCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RTCategory.h"; sourceTree = "<group>"; };
+		C8C222481FA769290095914C /* NSObject+RTCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RTCategory.m"; sourceTree = "<group>"; };
+		C8C2224A1FA76B430095914C /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C8C2224B1FA76B430095914C /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C8C5CA031FA3398B00507AA1 /* UIViewController+RTCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RTCategory.h"; sourceTree = "<group>"; };
 		C8C5CA041FA3398B00507AA1 /* UIViewController+RTCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RTCategory.m"; sourceTree = "<group>"; };
 		EBFD771D273BDDE04825DF89 /* Pods-RoadTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadTrip/Pods-RoadTrip.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,10 +178,8 @@
 				C80F2E031F9F29FE0038F005 /* NSData+Category.m */,
 				C80F2DE71F9F29F90038F005 /* NSMutableString+Category.h */,
 				C80F2E001F9F29FD0038F005 /* NSMutableString+Category.m */,
-				C80F2DEB1F9F29F90038F005 /* NSObject+Category.h */,
-				C80F2DFC1F9F29FC0038F005 /* NSObject+Category.m */,
-				C80F2DF11F9F29FA0038F005 /* NSObject+CZRuntime.h */,
-				C80F2DFA1F9F29FC0038F005 /* NSObject+CZRuntime.m */,
+				C8C222471FA769290095914C /* NSObject+RTCategory.h */,
+				C8C222481FA769290095914C /* NSObject+RTCategory.m */,
 				C80F2DEA1F9F29F90038F005 /* NSString+Category.h */,
 				C80F2DEC1F9F29F90038F005 /* NSString+Category.m */,
 				C80F2DFB1F9F29FC0038F005 /* NSString+CZBase64.h */,
@@ -259,6 +259,8 @@
 		C82863861FA71FAD0085D529 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C8C2224A1FA76B430095914C /* User.h */,
+				C8C2224B1FA76B430095914C /* User.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -405,6 +407,7 @@
 			files = (
 				C8C5CA051FA3398B00507AA1 /* UIViewController+RTCategory.m in Sources */,
 				C80F2DD51F9F281B0038F005 /* RTRootViewController.m in Sources */,
+				C8C2224C1FA76B430095914C /* User.m in Sources */,
 				C80F2DCB1F9F23780038F005 /* RTNavViewController.m in Sources */,
 				C8A9200D1FA1ADD900A4DAC9 /* RTNavigationViewController.m in Sources */,
 				C81725481F9DE88400BBC44D /* main.m in Sources */,
@@ -416,6 +419,7 @@
 				C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */,
 				C80F2DD01F9F279A0038F005 /* RTBaseViewController.m in Sources */,
 				C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */,
+				C8C222491FA769290095914C /* NSObject+RTCategory.m in Sources */,
 				C82863821FA71EC50085D529 /* NSURL+RTCategory.m in Sources */,
 				C8A920151FA1E03A00A4DAC9 /* UIButton+RTBlock.m in Sources */,
 				C80F2DD81F9F285D0038F005 /* RTHomeViewController.m in Sources */,
@@ -538,7 +542,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56ERQH9L8L;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Desktop/RoadTrip/RoadTrip/RT-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Documents/GitHub/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -557,7 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56ERQH9L8L;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Desktop/RoadTrip/RoadTrip/RT-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Documents/GitHub/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

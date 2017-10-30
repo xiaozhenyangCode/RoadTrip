@@ -7,7 +7,9 @@
 //
 
 #import "RTTestRequestViewController.h"
-
+#import "User.h"
+//oc 方法的调用 最终是调用函数!!而且每个函数都会接收两个隐式参数
+//1.方法的调用者 2.方法编号!
 @interface RTTestRequestViewController ()
 
 @end
@@ -21,7 +23,9 @@
     NSURL *url = [NSURL URLWithString:@"http://www.baidu.com/zh"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSLog(@"%@",request);
-
+    
+    User *u = [[User alloc]init];
+    [u performSelector:@selector(addPdd:)withObject:@"oneDay"];
 }
 
 - (void)didReceiveMemoryWarning {
