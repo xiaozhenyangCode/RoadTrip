@@ -205,9 +205,24 @@ void *ivarsKey = "cn.itcast.ivarsList";
     
     return objc_getAssociatedObject(self, ivarsKey);
 }
--(void)rt_observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+-(void)rt_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context{
     
+    //1.动态生成一个类
+    NSString *oldName = NSStringFromClass([self class]);
+    NSString *newName = [@"RTKVO_" stringByAppendingString:oldName];
+    const char *name = [newName UTF8String];
+    Class newClass = objc_allocateClassPair([self class], name, 0);
+    //注册该类
+    objc_registerClassPair(newClass);
     
+    //2.改变方法调用者的类型
+    object_setClass(self, newClass);
     
+    //3.给子类添加 setName 方法, 相当于重写
+    class_addMethod(newClass, @selector(setName:), (IMP)setName, "v@:@");
+
+}
+void setName(id self,SEL _cmd, NSString *string){
+    NSLog(@"%@",string);
 }
 @end

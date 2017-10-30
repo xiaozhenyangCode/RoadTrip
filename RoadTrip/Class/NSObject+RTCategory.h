@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSObject (RTCategory)
-- (void)rt_observeValueForKeyPath:( NSString *)keyPath ofObject:( id)object change:( NSDictionary<NSKeyValueChangeKey, id> *)change context:( void *)context;
+- (void)rt_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context;
 
 + (NSString *)classString;
 - (NSString *)classString;

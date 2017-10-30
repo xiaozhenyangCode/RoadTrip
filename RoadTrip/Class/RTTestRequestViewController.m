@@ -11,7 +11,7 @@
 //oc 方法的调用 最终是调用函数!!而且每个函数都会接收两个隐式参数
 //1.方法的调用者 2.方法编号!
 @interface RTTestRequestViewController ()
-
+@property(nonatomic,strong)User *u;
 @end
 
 @implementation RTTestRequestViewController
@@ -25,12 +25,18 @@
     NSLog(@"%@",request);
     
     User *u = [[User alloc]init];
-    [u performSelector:@selector(addPdd:)withObject:@"oneDay"];
+    [u rt_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
+    _u = u;
 }
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    
+    
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    static int i = 0;
+    i++;
+    _u.name = [NSString stringWithFormat:@"%d",i];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
