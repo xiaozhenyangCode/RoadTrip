@@ -1,30 +1,32 @@
 //
-//  RTFindViewController.m
+//  RTTestRequestViewController.m
 //  RoadTrip
 //
-//  Created by 一天 on 2017/10/24.
+//  Created by 一天 on 2017/10/30.
 //  Copyright © 2017年 shuaixiao. All rights reserved.
 //
 
-#import "RTFindViewController.h"
 #import "RTTestRequestViewController.h"
 
-@interface RTFindViewController ()
+@interface RTTestRequestViewController ()
 
 @end
 
-@implementation RTFindViewController
+@implementation RTTestRequestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = NSStringFromClass([self class]);
+
+    NSURL *url = [NSURL URLWithString:@"http://www.baidu.com/zh"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSLog(@"%@",request);
+
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    RTTestRequestViewController *ctrl = [[RTTestRequestViewController alloc]init];
-    [self.navigationController pushViewController:ctrl animated:YES];
-    
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

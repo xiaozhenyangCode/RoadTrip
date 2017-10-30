@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor randomColor];
-    
     [self.view addSubview:self.tableView];
 }
 -(void)setDataSource:(NSMutableArray *)dataSource{
