@@ -29,7 +29,7 @@
     OCTAppManager *manager = [OCTAppManager sharedManager];
     [manager scanApps];
 }
-《Minecraft:Mojang的故事》
+
 /*
 #pragma mark - Navigation
 
