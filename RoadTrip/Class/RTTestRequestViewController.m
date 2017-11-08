@@ -8,6 +8,8 @@
 
 #import "RTTestRequestViewController.h"
 #import "User.h"
+#import "OCTAppManager.h"
+
 //oc 方法的调用 最终是调用函数!!而且每个函数都会接收两个隐式参数
 //1.方法的调用者 2.方法编号!
 @interface RTTestRequestViewController ()
@@ -24,21 +26,10 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSLog(@"%@",request);
     
-    User *u = [[User alloc]init];
-    [u rt_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:nil];
-    _u = u;
+    OCTAppManager *manager = [OCTAppManager sharedManager];
+    [manager scanApps];
 }
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
-    
-    
-}
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    static int i = 0;
-    i++;
-    _u.name = [NSString stringWithFormat:@"%d",i];
-
-}
-
+《Minecraft:Mojang的故事》
 /*
 #pragma mark - Navigation
 

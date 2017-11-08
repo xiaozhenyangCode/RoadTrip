@@ -14,8 +14,8 @@
     //方法交换应该被保证在程序中只会执行一次
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL systemSel = @selector(viewWillAppear:);
-        SEL rtvySel = @selector(rt_viewWillAppear:);
+        SEL systemSel = @selector(viewDidLoad);
+        SEL rtvySel = @selector(rt_viewDidLoad);
         Method systemMethod = class_getInstanceMethod([self class], systemSel);
         Method henvyMethod = class_getInstanceMethod([self class], rtvySel);
         BOOL isAdd = class_addMethod(self, systemSel, method_getImplementation(henvyMethod),method_getTypeEncoding(henvyMethod));
@@ -30,9 +30,9 @@
         }
     });
 }
-- (void)rt_viewWillAppear:(BOOL)animated{
+- (void)rt_viewDidLoad{
     //这里自己调用自己，表面上循环引用其实已经被viewWillAppear替换掉了
-    [self rt_viewWillAppear:animated];
+    [self rt_viewDidLoad];
     NSLog(@"%@页面被加载完毕",self.title);
 }
 
@@ -48,5 +48,9 @@
     [childViewController willMoveToParentViewController:nil];
     [childViewController.view removeFromSuperview];
     [childViewController removeFromParentViewController];
+}
+-(void)dealloc{
+    
+    NSLog(@"%@控制器被释放",[self class]);
 }
 @end

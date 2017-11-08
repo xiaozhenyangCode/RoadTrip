@@ -19,6 +19,8 @@
 		C81725481F9DE88400BBC44D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C81725471F9DE88400BBC44D /* main.m */; };
 		C82863821FA71EC50085D529 /* NSURL+RTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C82863811FA71EC50085D529 /* NSURL+RTCategory.m */; };
 		C82863891FA71FF70085D529 /* RTTestRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82863881FA71FF70085D529 /* RTTestRequestViewController.m */; };
+		C834797C1FB0059200B0BADC /* OCTAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C834797A1FB0059200B0BADC /* OCTAppManager.m */; };
+		C834797D1FB0059200B0BADC /* OCTApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C834797B1FB0059200B0BADC /* OCTApp.m */; };
 		C89073951FA178C0002271B8 /* RTInterview.m in Sources */ = {isa = PBXBuildFile; fileRef = C89073941FA178C0002271B8 /* RTInterview.m */; };
 		C8A9200D1FA1ADD900A4DAC9 /* RTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A9200C1FA1ADD900A4DAC9 /* RTNavigationViewController.m */; };
 		C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A920111FA1D80000A4DAC9 /* SpeechSynthesizer.m */; };
@@ -79,6 +81,10 @@
 		C82863811FA71EC50085D529 /* NSURL+RTCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+RTCategory.m"; sourceTree = "<group>"; };
 		C82863871FA71FF70085D529 /* RTTestRequestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTTestRequestViewController.h; sourceTree = "<group>"; };
 		C82863881FA71FF70085D529 /* RTTestRequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTTestRequestViewController.m; sourceTree = "<group>"; };
+		C83479781FB0059100B0BADC /* OCTApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTApp.h; sourceTree = "<group>"; };
+		C83479791FB0059100B0BADC /* OCTAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTAppManager.h; sourceTree = "<group>"; };
+		C834797A1FB0059200B0BADC /* OCTAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTAppManager.m; sourceTree = "<group>"; };
+		C834797B1FB0059200B0BADC /* OCTApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTApp.m; sourceTree = "<group>"; };
 		C89073931FA178C0002271B8 /* RTInterview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTInterview.h; sourceTree = "<group>"; };
 		C89073941FA178C0002271B8 /* RTInterview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTInterview.m; sourceTree = "<group>"; };
 		C8A9200B1FA1ADD900A4DAC9 /* RTNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTNavigationViewController.h; sourceTree = "<group>"; };
@@ -168,6 +174,10 @@
 		C80F2DE01F9F28CB0038F005 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C83479781FB0059100B0BADC /* OCTApp.h */,
+				C834797B1FB0059200B0BADC /* OCTApp.m */,
+				C83479791FB0059100B0BADC /* OCTAppManager.h */,
+				C834797A1FB0059200B0BADC /* OCTAppManager.m */,
 				C80F2DF91F9F29FB0038F005 /* NSArray+Ca.h */,
 				C80F2E041F9F29FE0038F005 /* NSArray+Ca.m */,
 				C80F2DF71F9F29FB0038F005 /* NSArray+Log.h */,
@@ -419,7 +429,9 @@
 				C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */,
 				C80F2DD01F9F279A0038F005 /* RTBaseViewController.m in Sources */,
 				C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */,
+				C834797D1FB0059200B0BADC /* OCTApp.m in Sources */,
 				C8C222491FA769290095914C /* NSObject+RTCategory.m in Sources */,
+				C834797C1FB0059200B0BADC /* OCTAppManager.m in Sources */,
 				C82863821FA71EC50085D529 /* NSURL+RTCategory.m in Sources */,
 				C8A920151FA1E03A00A4DAC9 /* UIButton+RTBlock.m in Sources */,
 				C80F2DD81F9F285D0038F005 /* RTHomeViewController.m in Sources */,
@@ -540,9 +552,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56ERQH9L8L;
+				DEVELOPMENT_TEAM = Q6B4M6E2E6;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Documents/GitHub/RoadTrip/RoadTrip/RT-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Documents/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -559,9 +571,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56ERQH9L8L;
+				DEVELOPMENT_TEAM = Q6B4M6E2E6;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
-				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Documents/GitHub/RoadTrip/RoadTrip/RT-Prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/xiaozhenyang/Documents/RoadTrip/RoadTrip/RT-Prefix.pch";
 				INFOPLIST_FILE = RoadTrip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
