@@ -97,7 +97,7 @@
 - (void)driveManager:(AMapNaviDriveManager *)driveManager playNaviSoundString:(NSString *)soundString soundStringType:(AMapNaviSoundType)soundStringType{
     
     NSLog(@"playNaviSoundString:{%ld:%@}", (long)soundStringType, soundString);
-    
+    NSLog(@"%@",driveManager.naviRoute);
     [[SpeechSynthesizer sharedSpeechSynthesizer] speakString:soundString];    
 }
 //路径规划成功后，开始模拟导航
