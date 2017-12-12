@@ -25,9 +25,6 @@
     NSURL *url = [NSURL URLWithString:@"http://www.baidu.com/zh"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSLog(@"%@",request);
-    
-    OCTAppManager *manager = [OCTAppManager sharedManager];
-    [manager scanApps];
 }
 
 /*
