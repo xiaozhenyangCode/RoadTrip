@@ -14,7 +14,7 @@
 
 @protocol AMapNaviCompositeManagerDelegate;
 
-///导航组件类 since 5.1.0 注意：AMapNaviCompositeManager 不支持多实例，且不能和 AMapNaviDriveManager 同时实例化
+///导航组件类 since 5.1.0 注意：AMapNaviCompositeManager 内部使用了单例 [AMapNaviDriveManager sharedInstance]
 @interface AMapNaviCompositeManager : NSObject
 
 ///实现了 AMapNaviCompositeManagerDelegate 协议的类指针

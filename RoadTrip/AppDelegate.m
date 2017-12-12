@@ -19,6 +19,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     [self configurationThirdPartyFoundation];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController= [[RTRootViewController alloc]init];
@@ -30,6 +32,10 @@
     [AMapServices sharedServices].apiKey = @"2161ad5613ea28d57eda40f14e238ca7";
     [[NIMSDK sharedSDK]registerWithAppID:@"ab3af0287a9819f47575873b3e0ec387" cerName:@""];
     
+}
+void uncaughtExceptionHandler(NSException *exception) {
+    NSLog(@"CRASH: %@", exception);
+    NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

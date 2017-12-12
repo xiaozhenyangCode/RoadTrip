@@ -28,4 +28,24 @@
  */
 - (void)setStartNaviDirectly:(BOOL)directly;
 
+/**
+ * @brief 设置导航组件的主题皮肤类型. since 5.4.0
+ * @param themeType 主题皮肤类型，默认为 AMapNaviCompositeThemeTypeDefault（蓝色）,参考 AMapNaviCompositeThemeType .
+ */
+- (void)setThemeType:(AMapNaviCompositeThemeType)themeType;
+
+/**
+ * @brief 设置导航组件启动时，是否需要进行路径规划. 此设置只有在setStartNaviDirectly为YES时，才起作用. since 5.4.0
+ * @param need 是否需要进行路径规划，默认为YES. 如果为NO，导航组件启动时将不再进行算路，直接使用 AMapNaviDriveManager 单例已经规划好的路径进行导航
+ */
+- (void)setNeedCalculateRouteWhenPresent:(BOOL)need;
+
+/**
+ * @brief 设置导航组件界面dismiss时，是否调用 [AMapNaviDriveManager destroyInstance] 来尝试销毁 AMapNaviDriveManager 的单例. since 5.4.0
+ * @param need 是否尝试销毁 AMapNaviDriveManager 的单例，默认为YES.
+ */
+- (void)setNeedDestoryDriveManagerInstanceWhenDismiss:(BOOL)need;
+
+
+
 @end

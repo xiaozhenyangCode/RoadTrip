@@ -29,6 +29,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic,copy) NSString *value;
 
+
+/**
+ *  当提交这个新元素的用户从聊天室掉线或退出的时候，是否需要删除这个元素，默认为 false 不删除。
+ */
+@property (nonatomic,assign) BOOL transient;
+
 @end
 
 

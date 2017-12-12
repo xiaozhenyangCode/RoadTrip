@@ -85,16 +85,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign)    BOOL    shouldCountTeamNotification;
 
 
-
-/**
- *  是否开启 Https 支持
- *  @discusssion 默认为 YES。这个属性将影响使用 SDK 时上传下载文件的模式。
- *  如果设置为 YES，上传将使用 https 上传，所有返回 url 的地方也会尝试将 http url 调整为 https url
- *  如果设置为 NO，上传将使用 https 上传，而所有返回 url 的地方都只返回原 url，而不做任何处理，同时 `enabledHttpsForInfo` 和 `enabledHttpsForMessage` 将无效
- */
-@property (nonatomic,assign)    BOOL    enabledHttps;
-
-
 /**
  *  针对用户信息开启 https 支持
  *  @discusssion 默认为 YES。在默认情况下，我们认为用户头像，群头像，聊天室类用户头像等信息都是默认托管在云信上，所以 SDK 会针对他们自动开启 https 支持。

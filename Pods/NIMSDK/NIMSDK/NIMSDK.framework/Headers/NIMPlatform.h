@@ -2,7 +2,7 @@
 //  NIMPlatform.h
 //  NIMLib
 //
-//  Created by amao on 2017/5/5.
+//  Created by Netease.
 //  Copyright © 2017年 Netease. All rights reserved.
 //
 

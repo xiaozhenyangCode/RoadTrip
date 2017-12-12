@@ -36,7 +36,7 @@
     self.endPoint   = [AMapNaviPoint locationWithLatitude:40.07 longitude:116.35];
     
     //初始化AMapNaviDriveManager
-    self.driveManager = [[AMapNaviDriveManager alloc] init];
+    self.driveManager = [AMapNaviDriveManager sharedInstance];
     [self.driveManager setBroadcastMode:AMapNaviBroadcastModeConcise];
     [self.driveManager setDelegate:self];
     
@@ -106,7 +106,9 @@
     [self.driveManager startEmulatorNavi];
 }
 -(void)dealloc{
-    
+    if ([AMapNaviDriveManager destroyInstance]) {
+        NSLog(@"AMapNaviDriveManager被销毁");
+    }
     [self.driveManager stopNavi];
 }
 @end

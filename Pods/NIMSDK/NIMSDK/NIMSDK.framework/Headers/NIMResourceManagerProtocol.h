@@ -81,6 +81,15 @@ typedef void(^NIMDownloadCompleteBlock)(NSError * __nullable error);
  */
 - (NSString *)convertHttpToHttps:(NSString *)httpURLString;
 
+/**
+ *  将 url 转换为加速后的 url 地址
+ *
+ *  @param urlString 未加速 url 地址
+ *  @discussion 对于海外/私有化用户，需要设置对应的加速地址 [NIMServerSetting nosAcclerateAddress] 设置后所有使用 NIMResourceManager 进行下载的 url 都会在下载时被转换为加速地址
+ *              但对于一些使用第三方库进行下载的流程 (如使用 SDWebImage 进行图片下载管理)，则需要将 url 转换为加速地址后再传入，调用此接口进行转换
+ */
+- (NSString *)convertURLToAcceleratedURL:(NSString *)urlString;
+
 @end
 
 

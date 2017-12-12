@@ -33,7 +33,9 @@
 - (void)rt_viewDidLoad{
     //这里自己调用自己，表面上循环引用其实已经被viewWillAppear替换掉了
     [self rt_viewDidLoad];
-    NSLog(@"%@页面被加载完毕",self.title);
+    if (self.title != nil) {
+        NSLog(@"%@页面被加载完毕",self.title);
+    }
 }
 
 - (void)presentChildViewController:(UIViewController *)childViewController{
@@ -49,8 +51,5 @@
     [childViewController.view removeFromSuperview];
     [childViewController removeFromParentViewController];
 }
--(void)dealloc{
-    
-    NSLog(@"%@控制器被释放",[self class]);
-}
+
 @end
