@@ -23,7 +23,7 @@
     _dataSource = dataSource;
 }
 -(UITableView *)tableView{
-    if (_tableView==nil) {
+    if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenSize.width, kScreenSize.height) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;

@@ -8,7 +8,6 @@
 
 #import "RTTestRequestViewController.h"
 #import "User.h"
-#import "OCTAppManager.h"
 
 //oc 方法的调用 最终是调用函数!!而且每个函数都会接收两个隐式参数
 //1.方法的调用者 2.方法编号!

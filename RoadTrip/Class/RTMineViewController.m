@@ -7,6 +7,7 @@
 //
 
 #import "RTMineViewController.h"
+#import "RTMovingAnnotationCtrl.h"
 
 @interface RTMineViewController ()
 
@@ -19,9 +20,11 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    RTMovingAnnotationCtrl *ctrl = [[RTMovingAnnotationCtrl alloc]init];
+    [self.navigationController pushViewController:ctrl animated:YES];
+    
 }
 
 /*
