@@ -94,7 +94,40 @@
     [self initLocationButton];
     
 }
-
+//页面将要进入前台，开启定时器
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    //注册程序进入前台通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (appWillEnterFront) name: UIApplicationWillEnterForegroundNotification object:nil];
+    
+    //注册程序进入后台通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (appDidEnterBack) name: UIApplicationDidEnterBackgroundNotification object:nil];
+    
+    
+    [super viewWillAppear:animated];
+}
+-(void)appWillEnterFront{
+    
+    NSLog(@"程序进入前台通知");
+}
+-(void)appDidEnterBack{
+    
+    NSLog(@"程序进入后台通知");
+}
+/**
+ *  这个方法里移除通知
+ */
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    //解除程序进入前台通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name: UIApplicationWillEnterForegroundNotification object:nil];
+    
+    //解除程序进入后台通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name: UIApplicationDidEnterBackgroundNotification object:nil];
+    
+    [super viewWillDisappear:animated];
+}
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
@@ -134,7 +167,7 @@
     
     [self.mutablePolyline removeAllPoints];
     
-    [self.mutableView referenceDidChange];
+    [self.mutableView setNeedsUpdate];
 }
 
 - (void)actionLocation
@@ -284,7 +317,7 @@
             
             [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
             
-            [self.mutableView referenceDidChange];
+            [self.mutableView setNeedsUpdate];
         }
     }
 #ifdef DEBUG
@@ -322,7 +355,7 @@
         return annotationView;
     }
     
-    if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
+    if ([annotation isMemberOfClass:[MAPointAnnotation class]]) {
         
         static NSString *indetifier = @"beginAndEnd";
         MAAnnotationView *anVC = [mapView dequeueReusableAnnotationViewWithIdentifier:indetifier];

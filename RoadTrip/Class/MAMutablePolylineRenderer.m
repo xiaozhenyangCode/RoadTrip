@@ -27,9 +27,9 @@
 
 #pragma mark - Override
 
-- (void)referenceDidChange
+- (void)setNeedsUpdate
 {
-    [super referenceDidChange];
+    [super setNeedsUpdate];
     
     MAMutablePolyline *polyline = [self mutablePolyline];
     
@@ -56,7 +56,7 @@
                              looped:NO
                        LineJoinType:self.lineJoinType
                         LineCapType:self.lineCapType
-                           lineDash:self.lineDash];
+                           lineDash:self.lineDashType];
 }
 
 
