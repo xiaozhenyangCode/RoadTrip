@@ -6,8 +6,8 @@
 //  Copyright © 2017年 CancerQ. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RTBaseScrollViewViewController.h"
 
-@interface RouteDrawViewController : UIViewController
+@interface RouteDrawViewController : RTBaseScrollViewViewController
 
 @end

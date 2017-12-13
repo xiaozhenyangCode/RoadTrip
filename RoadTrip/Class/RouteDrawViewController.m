@@ -47,6 +47,7 @@
 @property (nonatomic, strong) UIImage                   *imageLocated;
 
 @property (nonatomic, strong) UIImage                   *imageNotLocate;
+@property (nonatomic, strong) UIButton                   *playBtn;
 
 
 @end
@@ -58,7 +59,7 @@
 
 - (MAMapView *)mapView{
     if (!_mapView) {
-        _mapView = [[MAMapView alloc]initWithFrame:CGRectMake(0, NavigationViewHeight, SCREEN_WIDTH, SCREEN_HEIGHT - 64)];
+        _mapView = [[MAMapView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
         _mapView.showsScale = NO;
         _mapView.rotateCameraEnabled = NO;
         _mapView.showsCompass = NO;
@@ -108,20 +109,17 @@
 {
     self.isRecording = !self.isRecording;
     
-    if (self.isRecording)
-    {
+    if (self.isRecording){
         [self.mapView setZoomLevel:19 animated:YES];
         [self.tipView showTip:@"Start recording"];
-        self.navigationItem.leftBarButtonItem.image = [UIImage imageNamed:@"icon_stop.png"];
+        self.playBtn.selected = YES;
         
         if (self.currentRecord == nil)
         {
             self.currentRecord = [[Record alloc] init];
         }
-    }
-    else
-    {
-        self.navigationItem.leftBarButtonItem.image = [UIImage imageNamed:@"icon_play.png"];
+    }else{
+        self.playBtn.selected = NO;
         [self.tipView showTip:@"has stoppod recording"];
     }
 }
@@ -183,16 +181,24 @@
 
 - (void)initStatusView
 {
-    self.statusView = [[StatusView alloc] initWithFrame:CGRectMake(5, 35, 150, 150)];
+    self.statusView = [[StatusView alloc] initWithFrame:CGRectMake(0, 64, 150, 150)];
     
     [self.view addSubview:self.statusView];
 }
 
 - (void)initSystemInfoView
 {
-    self.systemInfoView = [[SystemInfoView alloc] initWithFrame:CGRectMake(5, 35 + 150 + 10, 150, 140)];
+    self.systemInfoView = [[SystemInfoView alloc] initWithFrame:CGRectMake(0, 64 + 150 + 10, 150, 140)];
     
     [self.view addSubview:self.systemInfoView];
+    
+    _playBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    _playBtn.frame = CGRectMake(0, self.systemInfoView.frame.origin.y+self.systemInfoView.height+30, 60, 40);
+    _playBtn.backgroundColor = [UIColor grayColor];
+    [_playBtn setImage:[UIImage imageNamed:@"icon_play.png"] forState:UIControlStateNormal];
+    [_playBtn setImage:[UIImage imageNamed:@"icon_stop.png"] forState:UIControlStateSelected];
+    [_playBtn addTarget:self action:@selector(actionRecordAndStop) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_playBtn];
 }
 
 - (void)initTipView
@@ -207,8 +213,7 @@
 - (void)initNavigationBar
 {
 //    self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_play.png"] style:UIBarButtonItemStylePlain target:self action:@selector(actionRecordAndStop)];
+  
     
     UIBarButtonItem *clearButton = [[UIBarButtonItem alloc] initWithTitle:@"clear" style:UIBarButtonItemStylePlain target:self action:@selector(actionClear)];
     UIBarButtonItem *listButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_list"] style:UIBarButtonItemStylePlain target:self action:@selector(actionShowList)];

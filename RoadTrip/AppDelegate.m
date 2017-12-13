@@ -29,6 +29,7 @@
 }   
 
 -(void)configurationThirdPartyFoundation{
+    [[AMapServices sharedServices] setEnableHTTPS:YES];
     [AMapServices sharedServices].apiKey = @"2161ad5613ea28d57eda40f14e238ca7";
     [[NIMSDK sharedSDK]registerWithAppID:@"ab3af0287a9819f47575873b3e0ec387" cerName:@""];
     
