@@ -21,6 +21,21 @@
 		C82863891FA71FF70085D529 /* RTTestRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82863881FA71FF70085D529 /* RTTestRequestViewController.m */; };
 		C834797C1FB0059200B0BADC /* OCTAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C834797A1FB0059200B0BADC /* OCTAppManager.m */; };
 		C834797D1FB0059200B0BADC /* OCTApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C834797B1FB0059200B0BADC /* OCTApp.m */; };
+		C88EE6DE1FE11B01003B452A /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6D91FE11B00003B452A /* DisplayViewController.m */; };
+		C88EE6DF1FE11B01003B452A /* RouteDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6DB1FE11B00003B452A /* RouteDrawViewController.m */; };
+		C88EE6E01FE11B01003B452A /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6DC1FE11B01003B452A /* RecordViewController.m */; };
+		C88EE6F21FE11B11003B452A /* PerKulometerPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6E21FE11B10003B452A /* PerKulometerPoint.m */; };
+		C88EE6F31FE11B11003B452A /* MySlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6E51FE11B10003B452A /* MySlider.m */; };
+		C88EE6F41FE11B11003B452A /* PerKilometerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6E71FE11B10003B452A /* PerKilometerLabel.m */; };
+		C88EE6F51FE11B11003B452A /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6E81FE11B10003B452A /* TipView.m */; };
+		C88EE6F61FE11B11003B452A /* SystemInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6EB1FE11B11003B452A /* SystemInfoView.m */; };
+		C88EE6F71FE11B11003B452A /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6EE1FE11B11003B452A /* StatusView.m */; };
+		C88EE6F81FE11B11003B452A /* MAMutablePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6F01FE11B11003B452A /* MAMutablePolyline.m */; };
+		C88EE6F91FE11B11003B452A /* MAMutablePolylineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6F11FE11B11003B452A /* MAMutablePolylineRenderer.m */; };
+		C88EE7011FE11B26003B452A /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6FB1FE11B26003B452A /* Record.m */; };
+		C88EE7021FE11B26003B452A /* SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6FE1FE11B26003B452A /* SystemInfo.m */; };
+		C88EE7031FE11B26003B452A /* FileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE6FF1FE11B26003B452A /* FileHelper.m */; };
+		C88EE7081FE11B4C003B452A /* Const_Basic.m in Sources */ = {isa = PBXBuildFile; fileRef = C88EE7071FE11B4C003B452A /* Const_Basic.m */; };
 		C89073951FA178C0002271B8 /* RTInterview.m in Sources */ = {isa = PBXBuildFile; fileRef = C89073941FA178C0002271B8 /* RTInterview.m */; };
 		C89A7E041FDF764200C4428D /* RTMovingAnnotationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A7E031FDF764200C4428D /* RTMovingAnnotationCtrl.m */; };
 		C89A7E071FDF79E300C4428D /* RTBaseScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C89A7E061FDF79E300C4428D /* RTBaseScrollViewViewController.m */; };
@@ -88,6 +103,36 @@
 		C83479791FB0059100B0BADC /* OCTAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTAppManager.h; sourceTree = "<group>"; };
 		C834797A1FB0059200B0BADC /* OCTAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTAppManager.m; sourceTree = "<group>"; };
 		C834797B1FB0059200B0BADC /* OCTApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTApp.m; sourceTree = "<group>"; };
+		C88EE6D81FE11B00003B452A /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		C88EE6D91FE11B00003B452A /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		C88EE6DA1FE11B00003B452A /* RouteDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteDrawViewController.h; sourceTree = "<group>"; };
+		C88EE6DB1FE11B00003B452A /* RouteDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteDrawViewController.m; sourceTree = "<group>"; };
+		C88EE6DC1FE11B01003B452A /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		C88EE6DD1FE11B01003B452A /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		C88EE6E21FE11B10003B452A /* PerKulometerPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerKulometerPoint.m; sourceTree = "<group>"; };
+		C88EE6E31FE11B10003B452A /* PerKulometerPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerKulometerPoint.h; sourceTree = "<group>"; };
+		C88EE6E41FE11B10003B452A /* MAMutablePolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMutablePolyline.h; sourceTree = "<group>"; };
+		C88EE6E51FE11B10003B452A /* MySlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySlider.m; sourceTree = "<group>"; };
+		C88EE6E61FE11B10003B452A /* MAMutablePolylineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMutablePolylineRenderer.h; sourceTree = "<group>"; };
+		C88EE6E71FE11B10003B452A /* PerKilometerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerKilometerLabel.m; sourceTree = "<group>"; };
+		C88EE6E81FE11B10003B452A /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
+		C88EE6E91FE11B11003B452A /* SystemInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfoView.h; sourceTree = "<group>"; };
+		C88EE6EA1FE11B11003B452A /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
+		C88EE6EB1FE11B11003B452A /* SystemInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInfoView.m; sourceTree = "<group>"; };
+		C88EE6EC1FE11B11003B452A /* MySlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySlider.h; sourceTree = "<group>"; };
+		C88EE6ED1FE11B11003B452A /* PerKilometerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerKilometerLabel.h; sourceTree = "<group>"; };
+		C88EE6EE1FE11B11003B452A /* StatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusView.m; sourceTree = "<group>"; };
+		C88EE6EF1FE11B11003B452A /* StatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusView.h; sourceTree = "<group>"; };
+		C88EE6F01FE11B11003B452A /* MAMutablePolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMutablePolyline.m; sourceTree = "<group>"; };
+		C88EE6F11FE11B11003B452A /* MAMutablePolylineRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMutablePolylineRenderer.m; sourceTree = "<group>"; };
+		C88EE6FB1FE11B26003B452A /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		C88EE6FC1FE11B26003B452A /* SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfo.h; sourceTree = "<group>"; };
+		C88EE6FD1FE11B26003B452A /* FileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHelper.h; sourceTree = "<group>"; };
+		C88EE6FE1FE11B26003B452A /* SystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInfo.m; sourceTree = "<group>"; };
+		C88EE6FF1FE11B26003B452A /* FileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHelper.m; sourceTree = "<group>"; };
+		C88EE7001FE11B26003B452A /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		C88EE7061FE11B4C003B452A /* Const_Basic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const_Basic.h; sourceTree = "<group>"; };
+		C88EE7071FE11B4C003B452A /* Const_Basic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const_Basic.m; sourceTree = "<group>"; };
 		C89073931FA178C0002271B8 /* RTInterview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTInterview.h; sourceTree = "<group>"; };
 		C89073941FA178C0002271B8 /* RTInterview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTInterview.m; sourceTree = "<group>"; };
 		C89A7E021FDF764200C4428D /* RTMovingAnnotationCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTMovingAnnotationCtrl.h; sourceTree = "<group>"; };
@@ -272,6 +317,10 @@
 		C82863851FA71F9F0085D529 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				C88EE7041FE11B2A003B452A /* Until */,
+				C88EE6FA1FE11B14003B452A /* Model */,
+				C88EE6E11FE11B05003B452A /* View */,
+				C88EE6D71FE11AF2003B452A /* Ctrl */,
 				C82863871FA71FF70085D529 /* RTTestRequestViewController.h */,
 				C82863881FA71FF70085D529 /* RTTestRequestViewController.m */,
 			);
@@ -285,6 +334,64 @@
 				C8C2224B1FA76B430095914C /* User.m */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		C88EE6D71FE11AF2003B452A /* Ctrl */ = {
+			isa = PBXGroup;
+			children = (
+				C88EE6D81FE11B00003B452A /* DisplayViewController.h */,
+				C88EE6D91FE11B00003B452A /* DisplayViewController.m */,
+				C88EE6DD1FE11B01003B452A /* RecordViewController.h */,
+				C88EE6DC1FE11B01003B452A /* RecordViewController.m */,
+				C88EE6DA1FE11B00003B452A /* RouteDrawViewController.h */,
+				C88EE6DB1FE11B00003B452A /* RouteDrawViewController.m */,
+			);
+			name = Ctrl;
+			sourceTree = "<group>";
+		};
+		C88EE6E11FE11B05003B452A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C88EE6E41FE11B10003B452A /* MAMutablePolyline.h */,
+				C88EE6F01FE11B11003B452A /* MAMutablePolyline.m */,
+				C88EE6E61FE11B10003B452A /* MAMutablePolylineRenderer.h */,
+				C88EE6F11FE11B11003B452A /* MAMutablePolylineRenderer.m */,
+				C88EE6EC1FE11B11003B452A /* MySlider.h */,
+				C88EE6E51FE11B10003B452A /* MySlider.m */,
+				C88EE6ED1FE11B11003B452A /* PerKilometerLabel.h */,
+				C88EE6E71FE11B10003B452A /* PerKilometerLabel.m */,
+				C88EE6E31FE11B10003B452A /* PerKulometerPoint.h */,
+				C88EE6E21FE11B10003B452A /* PerKulometerPoint.m */,
+				C88EE6EF1FE11B11003B452A /* StatusView.h */,
+				C88EE6EE1FE11B11003B452A /* StatusView.m */,
+				C88EE6E91FE11B11003B452A /* SystemInfoView.h */,
+				C88EE6EB1FE11B11003B452A /* SystemInfoView.m */,
+				C88EE6EA1FE11B11003B452A /* TipView.h */,
+				C88EE6E81FE11B10003B452A /* TipView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C88EE6FA1FE11B14003B452A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C88EE6FD1FE11B26003B452A /* FileHelper.h */,
+				C88EE6FF1FE11B26003B452A /* FileHelper.m */,
+				C88EE7001FE11B26003B452A /* Record.h */,
+				C88EE6FB1FE11B26003B452A /* Record.m */,
+				C88EE6FC1FE11B26003B452A /* SystemInfo.h */,
+				C88EE6FE1FE11B26003B452A /* SystemInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C88EE7041FE11B2A003B452A /* Until */ = {
+			isa = PBXGroup;
+			children = (
+				C88EE7061FE11B4C003B452A /* Const_Basic.h */,
+				C88EE7071FE11B4C003B452A /* Const_Basic.m */,
+			);
+			name = Until;
 			sourceTree = "<group>";
 		};
 		C89A7E011FDF760900C4428D /* Mine */ = {
@@ -344,6 +451,14 @@
 					C81725311F9DE88400BBC44D = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -440,26 +555,41 @@
 			files = (
 				C8C5CA051FA3398B00507AA1 /* UIViewController+RTCategory.m in Sources */,
 				C80F2DD51F9F281B0038F005 /* RTRootViewController.m in Sources */,
+				C88EE6F41FE11B11003B452A /* PerKilometerLabel.m in Sources */,
 				C8C2224C1FA76B430095914C /* User.m in Sources */,
 				C80F2DCB1F9F23780038F005 /* RTNavViewController.m in Sources */,
+				C88EE6DF1FE11B01003B452A /* RouteDrawViewController.m in Sources */,
+				C88EE6F71FE11B11003B452A /* StatusView.m in Sources */,
+				C88EE6F51FE11B11003B452A /* TipView.m in Sources */,
 				C8A9200D1FA1ADD900A4DAC9 /* RTNavigationViewController.m in Sources */,
 				C81725481F9DE88400BBC44D /* main.m in Sources */,
 				C80F2DDE1F9F28860038F005 /* RTMineViewController.m in Sources */,
+				C88EE6DE1FE11B01003B452A /* DisplayViewController.m in Sources */,
+				C88EE7081FE11B4C003B452A /* Const_Basic.m in Sources */,
+				C88EE6F21FE11B11003B452A /* PerKulometerPoint.m in Sources */,
 				C82863891FA71FF70085D529 /* RTTestRequestViewController.m in Sources */,
 				C80F2E0D1F9F346A0038F005 /* UIColor+RTCategory.m in Sources */,
 				C89073951FA178C0002271B8 /* RTInterview.m in Sources */,
+				C88EE6F61FE11B11003B452A /* SystemInfoView.m in Sources */,
 				C80F2DDB1F9F287D0038F005 /* RTFindViewController.m in Sources */,
 				C81725371F9DE88400BBC44D /* AppDelegate.m in Sources */,
 				C80F2DD01F9F279A0038F005 /* RTBaseViewController.m in Sources */,
 				C89A7E0D1FDF7F3100C4428D /* RTCustomMovingAnnotation.m in Sources */,
 				C8A920121FA1D80000A4DAC9 /* SpeechSynthesizer.m in Sources */,
+				C88EE6E01FE11B01003B452A /* RecordViewController.m in Sources */,
+				C88EE6F91FE11B11003B452A /* MAMutablePolylineRenderer.m in Sources */,
 				C834797D1FB0059200B0BADC /* OCTApp.m in Sources */,
 				C8C222491FA769290095914C /* NSObject+RTCategory.m in Sources */,
 				C89A7E071FDF79E300C4428D /* RTBaseScrollViewViewController.m in Sources */,
 				C834797C1FB0059200B0BADC /* OCTAppManager.m in Sources */,
+				C88EE7021FE11B26003B452A /* SystemInfo.m in Sources */,
+				C88EE7031FE11B26003B452A /* FileHelper.m in Sources */,
 				C82863821FA71EC50085D529 /* NSURL+RTCategory.m in Sources */,
 				C89A7E041FDF764200C4428D /* RTMovingAnnotationCtrl.m in Sources */,
+				C88EE7011FE11B26003B452A /* Record.m in Sources */,
+				C88EE6F81FE11B11003B452A /* MAMutablePolyline.m in Sources */,
 				C8A920151FA1E03A00A4DAC9 /* UIButton+RTBlock.m in Sources */,
+				C88EE6F31FE11B11003B452A /* MySlider.m in Sources */,
 				C80F2DD81F9F285D0038F005 /* RTHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

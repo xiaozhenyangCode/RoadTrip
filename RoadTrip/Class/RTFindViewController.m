@@ -7,7 +7,7 @@
 //
 
 #import "RTFindViewController.h"
-#import "RTTestRequestViewController.h"
+#import "RouteDrawViewController.h"
 
 @interface RTFindViewController ()
 
@@ -17,12 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.dataSource = [NSMutableArray arrayWithObjects:@"9",@"8",@"7",@"6",@"5",@"4",@"3",@"2",@"1",@"0",nil];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    RTTestRequestViewController *ctrl = [[RTTestRequestViewController alloc]init];
+    RouteDrawViewController *ctrl = [[RouteDrawViewController alloc]init];
     [self.navigationController pushViewController:ctrl animated:YES];
     
 }

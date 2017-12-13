@@ -6,8 +6,8 @@
 //  Copyright © 2017年 shuaixiao. All rights reserved.
 //
 
-#import "RTBaseViewController.h"
+#import "RTBaseScrollViewViewController.h"
 
-@interface RTTestRequestViewController : RTBaseViewController
+@interface RTTestRequestViewController : RTBaseScrollViewViewController
 
 @end
